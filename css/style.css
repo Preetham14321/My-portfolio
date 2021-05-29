@@ -336,7 +336,7 @@ img {
 }
 .home__content {
   grid-template-columns: 0.5fr 3fr;
-  padding-top: 2.7rem;
+  padding-top: 0.7rem;
   align-items: center;
 }
 .home__social {
@@ -396,7 +396,11 @@ img {
 .home__scroll-arrow {
   font-size: 1.25rem;
 }
-
+.myHero {
+  width: 78vw;
+  margin: auto;
+  margin-top: 1em;
+}
 /*==================== BUTTONS ====================*/
 .button {
   display: inline-blocks;
