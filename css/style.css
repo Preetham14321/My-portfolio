@@ -265,6 +265,12 @@ img {
   box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
 }
 
+/* Revealing element effect */
+.section--hidden {
+  opacity: 0;
+  transform: translateY(12rem);
+}
+
 /*=========blob Image Urgesting ========= */
 /* .home__blob-img {
   width: 150px;
@@ -962,4 +968,30 @@ img {
     justify-content: center;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body {
+    margin: 0;
+  }
+  .section {
+    padding: 6rem 0 2rem;
+  }
+  .section__subtitle {
+    margin-bottom: 4rem;
+  }
+  .header {
+    top: 0;
+    bottom: initial;
+  }
+  .header,
+  .main,
+  .footer__container {
+    padding: 0 1rem;
+  }
+}
+
 /* For large devices */ ;
