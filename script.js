@@ -44,7 +44,7 @@ function toggleSkills() {
 }
 skillsHeader.forEach((el) => {
   el.addEventListener("click", toggleSkills);
-  console.log("clicker");
+  // console.log("clicker");
 });
 /*==================== QUALIFICATION TABS ====================*/
 
