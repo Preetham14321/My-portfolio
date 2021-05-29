@@ -12,10 +12,10 @@
     />
 
     <!-- ====================== Swiper Css =============== -->
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
 
     <!-- ========================= Css ================ -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
 
     <title>Preetham || Portfolio</title>
   </head>
@@ -442,15 +442,78 @@
               <h2 class="section__title">Portfolio</h2>
               <span class="section__subtitle">Most Recent Works</span>
               
-              <div class="portfolio__container container">
-                <div>
+              <div class="portfolio__container container swiper-container">
+                <div class="swiper-wrapper">
                   <!--==================== PORTFOLIO 1====================-->
-                  <div class="portfolio__content grid">
-                    <img src="" alt="" class="portfolio__img">
+                  <div class="portfolio__content grid swiper-slide">
+                    <img src="./Images/trackbank.png" alt="TrackBank image" class="portfolio__img" >
+                    <div class="portfolio__data">
+                      <h3 class="portfolio__title">TrackBank</h3>
+                      <p class="portfolio__description">Name of  Project is  "Talk Mango " which Covert your Input to "Minion a/s Mango" Language and which talk to the Server. <br>
+                        LogIn details : <br>
+                        user : Preetham Nayak <br> Pin:1111
+                      </p>
+                        <a href="https://trackbank.netlify.app/" class="button button--flex button--small portfolio__button">
+                          Demo <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+
                   </div>
+                  <!--==================== PORTFOLIO 2====================-->
+                  <div class="portfolio__content grid swiper-slide">
+                    <img src="./Images/talkmango.png" alt="TalkMango image" class="portfolio__img" >
+                    <div class="portfolio__data">
+                      <h3 class="portfolio__title">TrackBank</h3>
+                      <p class="portfolio__description">Name of  Project is "Track Bank" Web Application
+                        by which we can see our Transactions and request loan and etc.. as a real world Banking.</p>
+                        <a href="https://talkmango.netlify.app/" class="button button--flex button--small portfolio__button">
+                          Demo <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+
+                  </div>
+                  <!--==================== PORTFOLIO 3====================-->
+                  <div class="portfolio__content grid swiper-slide">
+                    <img src="./Images/dicedoll.png" alt="Dicedoll image" class="portfolio__img" >
+                    <div class="portfolio__data">
+                      <h3 class="portfolio__title">TrackBank</h3>
+                      <p class="portfolio__description">Name of  Project is "Track Bank" Web Application
+                        by which we can see our Transactions and request loan and etc.. as a real world Banking.</p>
+                        <a href="#" class="button button--flex button--small portfolio__button">
+                          Demo <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+
+                  </div>
+                  <!--==================== PORTFOLIO 4====================-->
+                  <div class="portfolio__content grid  swiper-slide">
+                    <img src="./Images/colorflipper.png" alt="colorflipper image" class="portfolio__img" >
+                    <div class="portfolio__data">
+                      <h3 class="portfolio__title">TrackBank</h3>
+                      <p class="portfolio__description">Name of  Project is "Track Bank" Web Application
+                        by which we can see our Transactions and request loan and etc.. as a real world Banking.</p>
+                        <a href="#" class="button button--flex button--small portfolio__button">
+                          Demo <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+
+                  </div>
+                  
 
                 </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next">
+                  <i class="uil uil-angle-right swiper-portfolio-icon"></i>
+
                 </div>
+                <div class="swiper-button-prev">
+
+                  <i class="uil uil-angle-left swiper-portfolio-icon"></i>
+                </div>
+
+                <!-- Add Pagination -->
+                <div class="swiper-pagination "></div>
+              </div>
 
             </section>
 
@@ -462,6 +525,13 @@
 
             <!--==================== TESTIMONIAL ====================-->
             <section class="testimonial section">
+              <div class="project__bg">
+                <div class="project__container container grid">
+                  <div class="project__data">
+                    <h2 class="project__title"></h2>
+                  </div>
+                </div>
+              </div>
                 
 
             </section>
@@ -483,9 +553,9 @@
         
 
         <!--==================== SWIPER JS ====================-->
-        <script src=""></script>
+        <script src="./js/swiper-bundle.min.js"></script>
 
     <!-- =================================== Main Js ============================== -->
-    <script src="script.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
