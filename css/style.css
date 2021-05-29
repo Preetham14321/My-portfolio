@@ -719,6 +719,14 @@ img {
   color: var(--text-color-light);
   margin-top: var(--mb-3);
 }
+
+.footer__title,
+.footer__subtitle,
+.footer__link,
+.footer__social {
+  color: #fff;
+}
+
 /*========== SCROLL UP ==========*/
 
 /* Show scroll */
