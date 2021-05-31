@@ -1015,9 +1015,6 @@ img {
     padding: 0 3rem;
   }
 
-  /* .section {
-    padding: 3rem;
-  } */
   .about__img {
     padding: 0 2rem;
     border-radius: 87px 19px 25px;
@@ -1075,9 +1072,59 @@ img {
     display: block;
   }
 
+  .services__icon {
+    font-size: 2rem;
+  }
+  .services__content {
+    padding: 6rem 0 2rem 2.5rem;
+  }
+  .services__modal-content {
+    width: 450px;
+  }
+
   .skills__content.skills__open {
     margin-right: 3rem;
   }
 }
 
-/* For large devices */ ;
+/* For large devices */
+@media screen and (min-width: 1024px) {
+
+  .active-link {
+    color: var(--first-color);
+}
+.nav__link:hover {
+  color: var(--first-color);
+  opacity: 0.75;
+}
+
+.myHero {
+    width: 22rem;
+    position: absolute;
+    right: 9rem;
+}
+.home__data {
+  
+}
+
+
+
+
+
+  /* .nav__logo,
+.nav__toggle {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+.nav__logo:hover {
+  color: var(--first-color);
+}
+.nav__toggle {
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.nav__toggle:hover {
+  color: var(--first-color);
+} */
+  }
+}
