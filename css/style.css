@@ -130,6 +130,7 @@ img {
 }
 .nav__link {
   text-decoration: none;
+  color: var(--text-color);
 }
 .nav__logo,
 .home__scroll-button,
@@ -984,6 +985,9 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .active-link {
+    color: var(--first-color);
+  }
   .container {
     margin-left: auto;
     margin-right: auto;
@@ -1040,7 +1044,6 @@ img {
   }
   .nav__link {
     text-decoration: none;
-    color: var(--text-color);
   }
 
   .nav__icon,
@@ -1089,42 +1092,37 @@ img {
 
 /* For large devices */
 @media screen and (min-width: 1024px) {
-
   .active-link {
     color: var(--first-color);
-}
-.nav__link:hover {
-  color: var(--first-color);
-  opacity: 0.75;
-}
+  }
+  .nav__link:hover {
+    color: var(--first-color);
+    opacity: 0.75;
+  }
 
-.myHero {
+  .myHero {
     width: 22rem;
     position: absolute;
     right: 9rem;
-}
-.home__data {
-  
-}
-
-
-
-
-
-  /* .nav__logo,
-.nav__toggle {
-  color: var(--title-color);
-  font-weight: var(--font-medium);
-}
-.nav__logo:hover {
-  color: var(--first-color);
-}
-.nav__toggle {
-  font-size: 1.1rem;
-  cursor: pointer;
-}
-.nav__toggle:hover {
-  color: var(--first-color);
-} */
+  }
+  .home__data {
+    position: relative;
+    left: 7rem;
+    top: -24.5rem;
+    width: 36vw;
+  }
+  .home__scroll {
+    position: absolute;
+    top: 24rem;
+    left: 31rem;
+  }
+  .main {
+  }
+  .section {
+    padding-bottom: 0;
+  }
+  .home__container {
+    row-gap: 5rem;
+    height: 47vh;
   }
 }
