@@ -837,6 +837,7 @@ img {
 .footer__bg {
   background-color: var(--first-color-second);
   padding: 2rem 0 3rem;
+  border-radius: 4rem 0 3.34rem 0;
 }
 
 .footer__title {
