@@ -159,6 +159,8 @@ img {
   text-align: center;
 }
 
+/* ============ General */
+
 /* ============ Layout =============== */
 .container {
   max-width: 768px;
@@ -825,6 +827,7 @@ img {
 
 .footer {
   padding-top: 2rem;
+  margin-right: -1rem;
 }
 
 .footer__container {
@@ -1123,6 +1126,5 @@ img {
   }
   .home__container {
     row-gap: 5rem;
-    height: 47vh;
   }
 }
