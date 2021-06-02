@@ -445,7 +445,7 @@ img {
   border-radius: 0.5rem;
   justify-self: center;
   align-self: center;
-  border-radius: 4rem 0 3.34rem 0;
+  /* border-radius: 4rem 0 3.34rem 0; */
 }
 .about__description {
   text-align: center;
@@ -828,7 +828,6 @@ img {
 
 .footer {
   padding-top: 2rem;
-  /* margin-right: -1rem; */
 }
 
 .footer__container {
@@ -838,7 +837,7 @@ img {
 .footer__bg {
   background-color: var(--first-color-second);
   padding: 2rem 0 3rem;
-  border-radius: 4rem 0 3.34rem 0;
+  border-radius: 4rem 0 14.34rem 0;
 }
 
 .footer__title {
