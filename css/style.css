@@ -400,7 +400,7 @@ img {
   font-size: 1.25rem;
 }
 .myHero {
-  width: 72vw;
+  width: 63vw;
   margin: auto;
   margin-top: 1em;
   margin-left: 2rem;
@@ -952,10 +952,10 @@ img {
     padding: 0 0.5rem;
   }
   .myHero {
-    width: 70vw;
+    width: 64vw;
     margin: auto;
     margin-top: 1em;
-    margin-left: 3rem;
+    margin-left: 1rem;
   }
   .about__img {
     /* padding: 0 2rem; */
