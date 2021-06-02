@@ -1,5 +1,3 @@
-"use strict";
-
 /*=========== Menu Show Y Hidden*/
 const navMenu = document.getElementById("nav-menu"),
   navToggle = document.getElementById("nav-toggle"),
@@ -71,37 +69,6 @@ modalCloses.forEach((modalClose) => {
   });
 });
 
-// ============ Reveal sections
-// const allSections = document.querySelectorAll(".section");
-// const revealSection = function (entries, obeserver) {
-//   const [entry] = entries;
-//   console.log(entry);
-//   entry.target.classList.remove("section--hidden");
-// };
-// const sectionObserver = new IntersectionObserver(revealSection, {
-//   root: null,
-//   threshold: 0.15,
-// });
-// allSections.forEach(function (section) {
-//   sectionObserver.observe(section);
-//   section.classList.add("section--hidden");
-// });
-
-// const aboutSection = document.querySelector(".section1");
-// const revealSection1 = function (entries, obeserver) {
-//   const [entry] = entries;
-//   entry.target.classList.remove("section--hidden");
-// };
-
-// const sectionObserver1 = new IntersectionObserver(revealSection1, {
-//   root: null,
-//   threshold: 0.15,
-// });
-// aboutSection.forEach(function (section) {
-//   sectionObserver1.observe(section1);
-//   section.classList.add("section--hidden");
-// });
-
 /*==================== PORTFOLIO SWIPER  ====================*/
 let swiper = new Swiper(".portfolio__container", {
   cssMode: true,
@@ -126,8 +93,8 @@ function scrollActive() {
 
   sections.forEach((current) => {
     const sectionHeight = current.offsetHeight;
-    const sectionTop = current.offsetTop - 50,
-      sectionId = current.getAttribute("id");
+    const sectionTop = current.offsetTop - 50;
+    sectionId = current.getAttribute("id");
 
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
       document
