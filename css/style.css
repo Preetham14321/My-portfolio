@@ -133,8 +133,7 @@ img {
   color: var(--text-color);
 }
 .nav__logo,
-.home__scroll-button,
-.button--flex {
+.home__scroll-button {
   text-decoration: none;
   list-style: none;
 }
