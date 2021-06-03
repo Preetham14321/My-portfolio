@@ -447,11 +447,8 @@ img {
   justify-self: center;
   align-self: center;
   border-radius: 4rem 0 3.34rem 0;
-  border: 1px solid var(--first-color-lighter);
 }
 
-
-}
 .about__description {
   text-align: center;
   margin-bottom: var(--mb-2-5);
