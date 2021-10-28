@@ -481,10 +481,12 @@ img {
   display: flex;
   justify-content: center;
 }
-.animation-hidden {
-  animation: pic-animate 2s ease-in-out forwards;
+.animation--hidden {
+  /* animation: pic-animate 2s ease-in-out forwards; */
+  opacity: 0;
+  transform: translateY(5rem);
 }
-@keyframes pic-animate {
+/* @keyframes pic-animate {
   from {
     opacity: 0;
     transform: translateX(-3rem);
@@ -493,7 +495,7 @@ img {
     opacity: 1;
     transform: translateX(1);
   }
-}
+} */
 
 /*==================== SKILLS ====================*/
 .skills__container {
