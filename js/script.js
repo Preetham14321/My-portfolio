@@ -162,26 +162,30 @@ themeButton.addEventListener("click", () => {
 });
 // Session Reveal Animation
 const allSections = document.querySelectorAll(".animation");
+const allSections2 = document.querySelectorAll(".animation2");
+const revealAnimation = function (sectionName, className) {
+  const revealSection = function (entries, observer) {
+    const [entry] = entries;
+    console.log(entry);
+    if (!entry.isIntersecting) return;
+    entry.target.classList.add(className);
+    entry.target.classList.remove("opacity--hidden");
+    observer.unobserve(entry.target);
+  };
 
-const revealSection = function (entries, observer) {
-  const [entry] = entries;
-  console.log(entry);
-  if (!entry.isIntersecting) return;
-  entry.target.classList.add("animation--hidden");
-  entry.target.classList.remove("opacity--hidden");
-  observer.unobserve(entry.target);
+  const sectionObserver = new IntersectionObserver(revealSection, {
+    root: null,
+    threshold: 0.35,
+  });
+
+  sectionName.forEach((section) => {
+    sectionObserver.observe(section);
+    section.classList.remove(className);
+    section.classList.add("opacity--hidden");
+  });
 };
-
-const sectionObserver = new IntersectionObserver(revealSection, {
-  root: null,
-  threshold: 0.35,
-});
-
-allSections.forEach((section) => {
-  sectionObserver.observe(section);
-  section.classList.remove("animation--hidden");
-  section.classList.add("opacity--hidden");
-});
+revealAnimation(allSections, "animation--hidden");
+revealAnimation(allSections2, "animation--hidden2");
 
 // const aniSection = document.querySelectorAll(".animation");
 
