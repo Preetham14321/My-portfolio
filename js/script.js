@@ -167,7 +167,8 @@ const revealSection = function (entries, observer) {
   const [entry] = entries;
   console.log(entry);
   if (!entry.isIntersecting) return;
-  entry.target.classList.remove("animation--hidden");
+  entry.target.classList.add("animation--hidden");
+  entry.target.classList.remove("opacity--hidden");
   observer.unobserve(entry.target);
 };
 
@@ -178,7 +179,8 @@ const sectionObserver = new IntersectionObserver(revealSection, {
 
 allSections.forEach((section) => {
   sectionObserver.observe(section);
-  section.classList.add("animation--hidden");
+  section.classList.remove("animation--hidden");
+  section.classList.add("opacity--hidden");
 });
 
 // const aniSection = document.querySelectorAll(".animation");
