@@ -175,7 +175,7 @@ const revealAnimation = function (sectionName, className) {
 
   const sectionObserver = new IntersectionObserver(revealSection, {
     root: null,
-    threshold: 0.35,
+    threshold: 0.5,
   });
 
   sectionName.forEach((section) => {
