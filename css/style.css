@@ -181,6 +181,13 @@ img {
   background-color: var(--body-color);
 }
 
+/* Animation  */
+
+/* .animation--hidden {
+  opacity: 0;
+  transform: translateX(-3rem);
+} */
+
 /* =================== Nav ====================== */
 .nav {
   max-width: 968px;
@@ -474,7 +481,7 @@ img {
   display: flex;
   justify-content: center;
 }
-#about {
+.animation-hidden {
   animation: pic-animate 2s ease-in-out forwards;
 }
 @keyframes pic-animate {

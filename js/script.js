@@ -160,3 +160,41 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
+// Session Reveal Animation
+// const allSections = document.querySelectorAll(".animation");
+
+// const revealSection = function (entries, observer) {
+//   const [entry] = entries;
+//   console.log(entry);
+//   if (!entry.isIntersecting) return;
+//   entry.target.classList.remove("animation--hidden");
+//   observer.unobserve(entry.target);
+// };
+
+// const sectionObserver = new IntersectionObserver(revealSection, {
+//   root: null,
+//   threshold: 0.35,
+// });
+
+// allSections.forEach((section) => {
+//   sectionObserver.observe(section);
+//   section.classList.add("animation--hidden");
+// });
+
+const aniSection = document.querySelectorAll(".animation");
+
+const revealSection = (entries, observer) => {
+  const [entry] = entries;
+  console.log(entry);
+  // if (!entry.isIntersecting) return;
+  // entry.target.classList.remove("animation--hidden");
+};
+
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.35,
+});
+aniSection.forEach((section) => {
+  sectionObserver.observe(section);
+  section.classList.add("animation--hidden");
+});
