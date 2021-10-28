@@ -481,7 +481,7 @@ img {
   transform: translateY(-5rem);
 }
 .animation--hidden {
-  animation: pic-animate 2s ease-in-out forwards;
+  animation: pic-animate 1.5s ease-in-out forwards;
 }
 @keyframes pic-animate {
   from {
@@ -495,7 +495,7 @@ img {
 }
 
 .animation--hidden2 {
-  animation: pic-animate1 2s ease-in-out forwards;
+  animation: pic-animate1 1.5s ease-in-out forwards;
 }
 @keyframes pic-animate1 {
   from {
