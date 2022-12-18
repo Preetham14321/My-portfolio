@@ -1,6 +1,7 @@
 /* ========Google Fonts======== */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
+
 /* =========== Variable Css ============ */
 :root {
   --header-height: 3rem;
@@ -440,11 +441,14 @@ img {
   color: var(--first-color-alt);
 }
 /*==================== ABOUT ====================*/
+
+
 .about__img {
-  border-radius: 0.5rem;
-  border-radius: 0.5rem;
+  /* border-radius: 0.5rem; */
+  /* border-radius: 0.5rem; */
   justify-self: center;
   align-self: center;
+  width: 70%;
   border-radius: 4rem 0 3.34rem 0;
 }
 
@@ -869,9 +873,9 @@ img {
 }
 
 .footer__bg {
-  background-color: var(--first-color-second);
+  background-color: hsl(224deg 42% 54%);
   padding: 2rem 0 3rem;
-  border-radius: 4rem 0 14.34rem 0;
+  /* border-radius: 4rem 0 14.34rem 0; */
 }
 
 .footer__title {
@@ -912,7 +916,21 @@ img {
 .footer__social {
   color: #fff;
 }
+.footer__links a {
+text-decoration: none;
+}
 
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+@media (min-width:1000px) {
+  .footer__links {
+    
+    padding-top: 4em;
+  }
+}
 /*========== SCROLL UP ==========*/
 .scrollup {
   position: fixed;
@@ -993,8 +1011,8 @@ img {
   }
   .about__img {
     /* padding: 0 2rem; */
-    border-radius: 87px 19px 25px;
-    border-radius: 4rem 0 3.34rem 0;
+    /* border-radius: 87px 19px 25px; */
+    /* border-radius: 4rem 0 3.34rem 0; */
   }
 }
 
@@ -1015,6 +1033,7 @@ img {
   .contact__container,
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
+    align-items: center;
   }
   .qualification__sections {
     display: grid;
@@ -1059,8 +1078,8 @@ img {
   }
 
   .about__img {
-    padding: 0 2rem;
-    border-radius: 87px 19px 25px;
+    /* padding: 0 2rem; */
+    /* border-radius: 87px 19px 25px; */
   }
 
   .myHero {
